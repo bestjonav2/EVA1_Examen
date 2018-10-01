@@ -5,24 +5,24 @@
     build-mode="COLD"
     density="420dpi"
     format="10"
-    ir-eligibility="METHOD_ADDED"
+    ir-eligibility="COMPATIBLE"
     plugin-version="3.1.4"
-    timestamp="1538372493785"
+    timestamp="1538374981729"
     token="362255152314615915"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="3333" />
+        duration="724" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="687" />
+        duration="371" />
     <task
         name="verifier"
-        duration="29" />
+        duration="20" />
 
     <artifact
         location="C:\Users\jona\Documents\1TEC\Aplicaciones Moviles\EVA1_Examen\EVA1_EXAMEN_PRACTICO_PROBLEMA_4\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
@@ -74,8 +74,8 @@
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="METHOD_ADDED"
-        timestamp="1538372493785"
+        ir-eligibility="COMPATIBLE"
+        timestamp="1538374981729"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\jona\Documents\1TEC\Aplicaciones Moviles\EVA1_Examen\EVA1_EXAMEN_PRACTICO_PROBLEMA_4\app\build\intermediates\split-apk\debug\slices\slice_3.apk"

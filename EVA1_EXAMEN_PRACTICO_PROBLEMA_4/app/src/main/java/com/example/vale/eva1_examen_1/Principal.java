@@ -87,37 +87,40 @@ public class Principal extends AppCompatActivity
                 int oct1 = 0, oct2 = 0, oct3 = 0, oct4 = 0;
 
                 int prefix = 0;
-                String mask = bin1+bin2+bin3+bin4;
+                String mask = bin5+bin6+bin7+bin8;
                 Log.i("Mask", mask);
                 for (int i=1; i < mask.length(); i++){
-                    if(mask.charAt(i) == 1 && mask.charAt(i-1) == 1){
+                    if(i == 1 && Character.getNumericValue(mask.charAt(i-1)) == 1){
+                        prefix++;
+                    }
+                    if(Character.getNumericValue(mask.charAt(i)) == 1 && Character.getNumericValue(mask.charAt(i-1)) == 1){
                         prefix++;
                     }
                 }
 
                 for (int i = 0; i < 8; i++){
-                    if(bin1.charAt(i) == 1 && bin1.charAt(i) == bin5.charAt(i)){
+                    if(Character.getNumericValue(bin1.charAt(i)) == 1 && bin1.charAt(i) == bin5.charAt(i)){
                         newOct1 += "1";
                     }else{
                         newOct1 += "0";
                     }
                 }
                 for (int i = 0; i < 8; i++){
-                    if(bin2.charAt(i) == 1 && bin2.charAt(i) == bin6.charAt(i)){
+                    if(Character.getNumericValue(bin2.charAt(i)) == 1 && bin2.charAt(i) == bin6.charAt(i)){
                         newOct2 += "1";
                     }else{
                         newOct2 += "0";
                     }
                 }
                 for (int i = 0; i < 8; i++){
-                    if(bin3.charAt(i) == 1 && bin3.charAt(i) == bin7.charAt(i)){
+                    if(Character.getNumericValue(bin3.charAt(i)) == 1 && bin3.charAt(i) == bin7.charAt(i)){
                         newOct3 += "1";
                     }else{
                         newOct3 += "0";
                     }
                 }
                 for (int i = 0; i < 8; i++){
-                    if(bin4.charAt(i) == 1 && bin4.charAt(i) == bin8.charAt(i)){
+                    if(Character.getNumericValue(bin4.charAt(i)) == 1 && bin4.charAt(i) == bin8.charAt(i)){
                         newOct4 += "1";
                     }else{
                         newOct4 += "0";
